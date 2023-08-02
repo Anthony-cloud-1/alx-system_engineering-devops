@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$(ls -a | tr '\n' ',')"
+echo "$(ls -ap | tr '\n' ',')"
