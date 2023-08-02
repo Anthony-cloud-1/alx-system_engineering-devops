@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a | grep -E '^[A-Za-z0-9]' | tr '\n' ',' | sed 's/,/, /g' | sed 's/,$/\n/'
+ls -m | tr '\n' ','
