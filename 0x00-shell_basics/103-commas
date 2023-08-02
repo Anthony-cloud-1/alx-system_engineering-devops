@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 \( ! -name . -printf './, ' \) -o \( -name .. -printf '../, ' \) -o -printf '%f, ' | sed 's/, $/\n/'
+find . -maxdepth 1 \( ! -name . -a ! -name .. \) -printf './, %f, ' | sed 's/, $/\n/'
