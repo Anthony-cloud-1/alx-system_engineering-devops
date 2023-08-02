@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$(ls -ap | tr '\n' ',' | sed 's/, /, /g' | sed 's/\(.*\),/\1/')"
+echo "$(ls -ap | tr '\n' ',' | sed 's/,$/\//; s/,/, /g')"
