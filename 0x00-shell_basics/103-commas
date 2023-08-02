@@ -1,0 +1,7 @@
+#!/bin/bash
+ls -ap1 | sort -d --ignore='.' | tr '\n' ',' | sed 's/,/, /g' | sed 's/, $/\n/'
+
+
+
+
+
