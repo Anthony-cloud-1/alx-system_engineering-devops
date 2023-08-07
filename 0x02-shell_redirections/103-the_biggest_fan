@@ -1,2 +1,2 @@
 #!/bin/bash
-sort -nr -k 2 < $1 | head -n 11
+sort -nr -k2,2 < $1 | head -n 11
